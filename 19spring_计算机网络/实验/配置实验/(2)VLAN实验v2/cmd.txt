@@ -1,0 +1,57 @@
+en 14
+b402
+configure terminal
+
+(3)
+switchA:
+
+vlan 10
+interface g0/5
+switchport access vlan 10
+exit
+
+vlan 20
+interface g0/15
+switchport access vlan 20
+exit
+
+switchB:
+
+vlan 10
+interface g0/6
+switchport access vlan 10
+exit
+
+vlan 20
+interface g0/16
+switchport access vlan 20
+exit
+
+switchA && switchB:
+¸ÉµÀ£º
+interface f0/24
+switchport mode trunk
+exit
+
+show vlan
+
+(4)
+switchA && switchB
+interface f0/24
+switchport mode access
+exit
+
+switchA:
+vlan 10
+interface g0/24
+switchport access vlan 10
+exit
+
+switchB:
+vlan 20
+interface g0/24
+switchport access vlan 20
+exit
+
+switchA && switchB
+show vlan

@@ -1,0 +1,58 @@
+
+pop.sina.com 110
+user zsureceiver3
+pass 123456Aa
+
+pop.qq.com 110
+user 269952425
+pass codjhphjwkpzbhif
+
+task1:
+sdcs.sysu.edu.cn 80
+GET /content/4692  HTTP/1.1
+Connection: Keep-Alive
+Host: sdcs.sysu.edu.cn
+GET /sites/sdcs.live1.dpcms8.sysu.edu.cn/files/styles/slideshow/public/slideshow/frontpic2.jpg HTTP/1.1
+Connection: close
+Host: sdcs.sysu.edu.cn
+If-Modified-Since: Fri, 16 Jan 2019 13:22:17 GMT
+
+
+tesk2:
+172.18.187.10 21
+172.18.187.10 52260
+user abc
+pass 123666
+type I
+pasv
+stor 17341146.txt
+retr 17341146.txt
+retr /ebook/ftp.pdf
+retr /text/Web.txt
+
+task3:
+smtp.sina.com 25
+dnZjeTExMjIyMjEx
+dGltMjEwNTA4OQ==
+------------------
+smtp.qq.com 25
+HELO vvcy11222211
+AUTH LOGIN
+MjY5OTUyNDI1
+Y29kamhwaGp3a3B6YmhpZg== //codjhphjwkpzbhif
+MAIL FROM:"wcy"<269952425@qq.com>
+RCPT TO:"wuweixin"<2731472384@qq.com>
+data
+Date:Tue, 25 Mar 2019 14:24:01 +0800
+From: "wcy"<269952425@qq.com>
+To: "wuweixin"<2731472384@qq.com>
+Subject: Test Net
+
+This is a SDCS message in MIME format.
+Hello! SDCS 17 from isszym
+Hello world!
+.
+
+
+task5:
+172.18.187.10 /ebook/ftp.pdf aaa.pdf

@@ -1,0 +1,43 @@
+(1)
+11-S5750-1(config)#show vlan
+VLAN Name                             Status    Ports     
+---- -------------------------------- --------- -----------------------------------
+   1 VLAN0001                         STATIC    Gi0/1, Gi0/2, Gi0/3, Gi0/4            
+                                                Gi0/5, Gi0/6, Gi0/7, Gi0/8            
+                                                Gi0/9, Gi0/11, Gi0/12, Gi0/13         
+                                                Gi0/14, Gi0/15, Gi0/16, Gi0/17        
+                                                Gi0/18, Gi0/19, Gi0/21, Gi0/22        
+                                                Gi0/23, Gi0/24, Gi0/25, Gi0/26        
+                                                Gi0/27, Gi0/28                        
+  10 VLAN0010                         STATIC    Gi0/6, Gi0/10                         
+  20 VLAN0020                         STATIC    Gi0/6, Gi0/20
+
+(2)
+11-S5750-1(config)#int vlan 10
+11-S5750-1(config-if-VLAN 10)#ip address 192.168.10.254 255.255.255.0
+11-S5750-1(config-if-VLAN 10)#exit
+11-S5750-1(config)#int vlan 20
+11-S5750-1(config-if-VLAN 10)#ip address 192.168.20.254 255.255.255.0
+11-S5750-1(config-if-VLAN 10)#exit
+
+(3)
+11-S5750-1(config)#show ip route
+
+Codes:  C - connected, S - static, R - RIP, B - BGP
+        O - OSPF, IA - OSPF inter area
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default
+
+Gateway of last resort is no set
+C    192.168.10.0/24 is directly connected, VLAN 10
+C    192.168.10.254/32 is local host. 
+C    192.168.20.0/24 is directly connected, VLAN 20
+C    192.168.20.254/32 is local host.
+
+(4)
+11-S5750-1(config)#show ip interface brief
+Interface                        IP-Address(Pri)      OK?       Status   
+VLAN 10                          192.168.10.254/24    YES       UP       
+VLAN 20                          192.168.20.254/24    YES       UP

@@ -1,0 +1,100 @@
+A
+11-S5750-1(config)#show vlan
+VLAN Name                             Status    Ports     
+---- -------------------------------- --------- -----------------------------------
+   1 VLAN0001                         STATIC    Gi0/1, Gi0/2, Gi0/3, Gi0/4            
+                                                Gi0/5, Gi0/6, Gi0/7, Gi0/8            
+                                                Gi0/9, Gi0/11, Gi0/12, Gi0/13         
+                                                Gi0/14, Gi0/15, Gi0/16, Gi0/17        
+                                                Gi0/18, Gi0/19, Gi0/21, Gi0/22        
+                                                Gi0/25, Gi0/26, Gi0/27, Gi0/28        
+  10 VLAN0010                         STATIC    Gi0/6, Gi0/10, Gi0/23                 
+  20 VLAN0020                         STATIC    Gi0/6, Gi0/20, Gi0/24
+
+
+(B)
+11-S5750-1(config)#vlan 10
+11-S5750-1(config-vlan)#interface g0/10
+11-S5750-1(config-if-GigabitEthernet 0/10)#switchport access vlan 10
+11-S5750-1(config-if-GigabitEthernet 0/10)#exit
+11-S5750-1(config)#vlan 20
+11-S5750-1(config-vlan)#interface g0/20
+11-S5750-1(config-if-GigabitEthernet 0/20)#switchport access vlan 20
+11-S5750-1(config-if-GigabitEthernet 0/20)#exit
+11-S5750-1(config)#vlan 10
+11-S5750-1(config-vlan)#interface g0/23
+11-S5750-1(config-if-GigabitEthernet 0/23)#switchport access vlan 10
+11-S5750-1(config-if-GigabitEthernet 0/23)#exit
+11-S5750-1(config)#vlan 20
+11-S5750-1(config-vlan)#interface g0/24
+11-S5750-1(config-if-GigabitEthernet 0/24)#switchport access vlan 20
+11-S5750-1(config-if-GigabitEthernet 0/24)#exit
+11-S5750-1(config)#interface g0/6
+11-S5750-1(config-if-GigabitEthernet 0/6)#switchport mode trunk
+11-S5750-1(config-if-GigabitEthernet 0/6)#exit
+
+
+C
+11-S5750-2(config)#show vlan
+VLAN Name                             Status    Ports     
+---- -------------------------------- --------- -----------------------------------
+   1 VLAN0001                         STATIC    Gi0/1, Gi0/2, Gi0/3, Gi0/4            
+                                                Gi0/5, Gi0/6, Gi0/7, Gi0/8            
+                                                Gi0/9, Gi0/11, Gi0/12, Gi0/13         
+                                                Gi0/14, Gi0/15, Gi0/16, Gi0/17        
+                                                Gi0/18, Gi0/19, Gi0/21, Gi0/22        
+                                                Gi0/23, Gi0/24, Gi0/25, Gi0/26        
+                                                Gi0/27, Gi0/28                        
+  10 VLAN0010                         STATIC    Gi0/6, Gi0/10                         
+  20 VLAN0020                         STATIC    Gi0/6, Gi0/20  
+
+
+D
+
+11-S5750-2(config)#vlan 10
+11-S5750-2(config-vlan)#interface g0/10
+11-S5750-2(config-if-GigabitEthernet 0/10)#switchport access vlan 10
+11-S5750-2(config-if-GigabitEthernet 0/10)#exit
+11-S5750-2(config)#vlan 20
+11-S5750-2(config-vlan)#interface g0/20
+11-S5750-2(config-if-GigabitEthernet 0/20)#switchport access vlan 20
+11-S5750-2(config-if-GigabitEthernet 0/20)#exit
+11-S5750-2(config)#interface g0/6
+11-S5750-2(config-if-GigabitEthernet 0/6)#switchport mode trunk    
+11-S5750-2(config-if-GigabitEthernet 0/6)#exit
+
+
+E
+1-RSR20-1(config)#show ip route
+
+Codes:  C - connected, S - static, R - RIP, B - BGP
+        O - OSPF, IA - OSPF inter area
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default
+
+Gateway of last resort is no set
+C    192.168.10.0/24 is directly connected, GigabitEthernet 0/0
+C    192.168.10.254/32 is local host. 
+C    192.168.20.0/24 is directly connected, GigabitEthernet 0/1
+C    192.168.20.254/32 is local host. 
+
+F
+1-RSR20-1(config)#show ip interface brief
+Interface                        IP-Address(Pri)      IP-Address(Sec)      Status                 Protocol 
+Serial 2/0                       no address           no address           up                     down     
+SIC-3G-WCDMA 3/0                 no address           no address           up                     down     
+GigabitEthernet 0/0              192.168.10.254/24    no address           up                     up       
+GigabitEthernet 0/1              192.168.20.254/24    no address           up                     up       
+VLAN 1                           no address           no address           up                     down   
+
+G
+1-RSR20-2(config)#interface Gi0/0
+1-RSR20-2(config-if-GigabitEthernet 0/0)#$.168.10.254 255.255.255.0          
+1-RSR20-2(config-if-GigabitEthernet 0/0)#no shutdown
+1-RSR20-2(config-if-GigabitEthernet 0/0)#exit
+1-RSR20-2(config)#interface Gi0/1
+1-RSR20-2(config-if-GigabitEthernet 0/1)#ip address 192.168.20.254 255.255.255$
+1-RSR20-2(config-if-GigabitEthernet 0/1)#no shutdown
+1-RSR20-2(config-if-GigabitEthernet 0/1)#exit
