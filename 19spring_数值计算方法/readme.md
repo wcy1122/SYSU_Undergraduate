@@ -1,0 +1,3 @@
+# SYSU_19Spring_Numerical_Methods
+本仓库包含19Spring 张雨侬老师数值计算方法课程的报告代码<br>
+包含曲线拟合的报告和样条的报告<br>
