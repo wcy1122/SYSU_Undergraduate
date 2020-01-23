@@ -1,0 +1,24 @@
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+Syntax is: TCC [ options ] file[s]       * = default; -x- = turn switch x off
+  -1      80186/286 Instructions          -A      Disable non-ANSI extensions
+  -B      Compile via assembly            -C      Allow nested comments
+  -Dxxx   Define macro                    -Exxx   Alternate assembler name
+  -G      Generate for speed              -Ixxx   Include files directory
+  -K      Default char is unsigned        -Lxxx   Libraries directory
+  -M      Generate link map               -N      Check stack overflow
+  -O      Optimize jumps                  -S      Produce assembly output
+  -Uxxx   Undefine macro                  -Z      Optimize register usage
+  -a      Generate word alignment         -c      Compile only
+  -d      Merge duplicate strings         -exxx   Executable file name
+  -f    * Floating point emulator         -f87    8087 floating point
+  -gN     Stop after N warnings           -iN     Maximum identifier length N
+  -jN     Stop after N errors             -k      Standard stack frame
+  -lx     Pass option x to linker         -mc     Compact Model
+  -mh     Huge Model                      -ml     Large Model
+  -mm     Medium Model                    -ms   * Small Model
+  -mt     Tiny Model                      -nxxx   Output file directory
+  -oxxx   Object file name                -p      Pascal calls
+  -r    * Register variables              -u    * Underscores on externs
+  -v      Source level debugging          -w      Enable all warnings
+  -wxxx   Enable warning xxx              -w-xxx  Disable warning xxx
+  -y      Produce line number info        -zxxx   Set segment names

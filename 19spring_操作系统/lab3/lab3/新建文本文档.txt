@@ -1,0 +1,6 @@
+mount d d:\aaa
+d:\
+tasm myos.asm myos.obj
+tcc -mt -c ¨Comain.obj main.c 
+tlink /3 /t myos.obj main.obj,test.com,,
+nasm -f bin guide.asm -o guide.com

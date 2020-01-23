@@ -1,0 +1,8 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 00601H 00602H _TEXT              CODE
+ 00602H 00738H 00137H _DATA              DATA
+ 0073AH 0074DH 00014H _BSS               BSS
+
+
