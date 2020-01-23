@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MUL_CPU.srcs/sources_1/new/ALU.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/D_state.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/D_trigger.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Data_Memory.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Get_Address.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Get_Op.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Get_State.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Ins_Memory.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Ins_Reg.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/MUX3.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/MUX32.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/MUX532.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Mul_CPU.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/PC.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/PC_Add.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/PC_Jump.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/PC_branch.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Regfile.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/Sign_extend.v" \
+"../../../../MUL_CPU.srcs/sources_1/new/control.v" \
+"../../../../MUL_CPU.srcs/sim_1/new/Mul_CPU_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

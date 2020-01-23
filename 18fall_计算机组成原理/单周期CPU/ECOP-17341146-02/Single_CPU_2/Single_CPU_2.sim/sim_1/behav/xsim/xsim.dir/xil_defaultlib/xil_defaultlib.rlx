@@ -1,0 +1,22 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/vivado/Single_CPU_2/Single_CPU_2.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/7_SegLED.v,1542508156,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/ALU.v,,SegLED,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/ALU.v,1542376486,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Data Memory.v,,ALU,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Data Memory.v,1542730524,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/GetAddress.v,,DataMemory,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/GetAddress.v,1542727720,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Ins Memory.v,,GetAddress,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Ins Memory.v,1542459305,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/MUX32.v,,InstructionMemory,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/MUX32.v,1542376520,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/MUX5.v,,MUX32,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/MUX5.v,1542376525,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/MUX532.v,,MUX5,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/MUX532.v,1542376474,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/PC.v,,MUX532,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/PC.v,1542723836,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Regfile.v,,PC,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Regfile.v,1542731131,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Sign Extend.v,,RegFile,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Sign Extend.v,1542376535,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Single_CPU.v,,SignExtend,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/Single_CPU.v,1542724269,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/control.v,,Single_CPU,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/control.v,1542467646,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/display.v,,control,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/display.v,1542628301,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/getclk.v,,display,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/getclk.v,1542733056,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/getdata.v,,getclk,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/getdata.v,1542641004,verilog,,D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/solve.v,,getdata,,,,,,,,
+D:/vivado/Single_CPU_2/Single_CPU_2.srcs/sources_1/new/solve.v,1542727969,verilog,,,,solve,,,,,,,,

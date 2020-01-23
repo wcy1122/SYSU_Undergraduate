@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/Data Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/GetAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GetAddress
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/Ins Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/MUX32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/MUX5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/MUX532.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX532
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/Sign Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/Single_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Single_CPU/Single_CPU.srcs/sim_1/new/Single_CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_spu_sim

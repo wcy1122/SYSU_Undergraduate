@@ -1,0 +1,25 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto b24d87e93e9d436c8cc44d46f60ec5d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot single_spu_sim_behav xil_defaultlib.single_spu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 32 for port immediate [D:/vivado/Single_CPU/Single_CPU.srcs/sources_1/new/Single_CPU.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MUX5
+Compiling module xil_defaultlib.MUX532
+Compiling module xil_defaultlib.MUX32
+Compiling module xil_defaultlib.GetAddress
+Compiling module xil_defaultlib.Single_CPU
+Compiling module xil_defaultlib.single_spu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot single_spu_sim_behav
