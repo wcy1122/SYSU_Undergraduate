@@ -1,0 +1,19 @@
+int main ()
+	int x , y , fact;
+	string str ;
+	char ch ;
+	x := 5 ;
+	y := ( 2 + 4 ) * 5 ;
+	str := "STR1!!!!" ;
+	ch := 'a';
+	
+	if 0 < x then // don't compute if x <= 0
+		fact := 1;
+		repeat
+			fact := fact * x;
+			x := x - 1 ;
+		until x == 0
+		write fact ; // output factorial of 
+	endif
+	
+	write str ;

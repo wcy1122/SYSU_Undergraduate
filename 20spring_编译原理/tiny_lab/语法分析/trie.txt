@@ -1,0 +1,153 @@
+Parsing Tree :
+Root
+  Func
+    -- int
+    -- main
+    -- (
+    -- )
+    Block
+      Statement
+        Vars
+          -- int
+          -- x
+          -- ,
+          -- y
+          -- ,
+          -- fact
+          -- ;
+      Statement
+        Vars
+          -- string
+          -- str
+          -- ;
+      Statement
+        Vars
+          -- char
+          -- ch
+          -- ;
+      Statement
+        Assignment
+          -- x
+          -- :=
+          Expression
+            Exp0
+              Exp1
+                Exp2
+                  -- 5
+          -- ;
+      Statement
+        Assignment
+          -- y
+          -- :=
+          Expression
+            Exp0
+              Exp1
+                Exp2
+                  -- (
+                  Expression
+                    Exp0
+                      Exp1
+                        Exp2
+                          -- 2
+                      -- +
+                      Exp1
+                        Exp2
+                          -- 4
+                  -- )
+                -- *
+                Exp2
+                  -- 5
+          -- ;
+      Statement
+        Assignment
+          -- str
+          -- :=
+          -- "STR1!!!!"
+          -- ;
+      Statement
+        Assignment
+          -- ch
+          -- :=
+          Expression
+            Exp0
+              Exp1
+                Exp2
+                  -- 'a'
+          -- ;
+      Statement
+        IfStmt
+          -- if
+          Expression
+            Exp0
+              Exp1
+                Exp2
+                  -- 0
+            -- <
+            Exp0
+              Exp1
+                Exp2
+                  -- x
+          -- then
+          Block
+            Statement
+              Assignment
+                -- fact
+                -- :=
+                Expression
+                  Exp0
+                    Exp1
+                      Exp2
+                        -- 1
+                -- ;
+            Statement
+              RepeatStmt
+                -- repeat
+                Block
+                  Statement
+                    Assignment
+                      -- fact
+                      -- :=
+                      Expression
+                        Exp0
+                          Exp1
+                            Exp2
+                              -- fact
+                            -- *
+                            Exp2
+                              -- x
+                      -- ;
+                  Statement
+                    Assignment
+                      -- x
+                      -- :=
+                      Expression
+                        Exp0
+                          Exp1
+                            Exp2
+                              -- x
+                          -- -
+                          Exp1
+                            Exp2
+                              -- 1
+                      -- ;
+                -- until
+                Expression
+                  Exp0
+                    Exp1
+                      Exp2
+                        -- x
+                  -- ==
+                  Exp0
+                    Exp1
+                      Exp2
+                        -- 0
+            Statement
+              WriteStmt
+                -- write
+                -- fact
+                -- ;
+      Statement
+        WriteStmt
+          -- write
+          -- str
+          -- ;

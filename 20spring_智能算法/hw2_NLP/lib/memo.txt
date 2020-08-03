@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=0 python ./lib/train.py --out_dir lstm_glove_100 --drop_rate 0.5 --load_embd glove.6B.100d.txt --embed 100
+CUDA_VISIBLE_DEVICES=6 python ./lib/test.py --in_dir lstm_50 --embed 50
+iseeliveforever5201314.

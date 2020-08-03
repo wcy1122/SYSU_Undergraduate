@@ -1,0 +1,17 @@
+int main ()
+	read x;
+	read x1;
+	x := 1e+3 ;
+	x1 := -3.444E-33 ;
+	str1 := "STR1!!!!" ;
+	ch1 := 'a';
+	x2 := ( 2 + 3 * 5 ) ;
+
+	if 0 < x then // don't compute if x <= 0
+	  fact := 1;
+	  repeat
+		fact := fact * x;
+		x := x - 1
+	  until x = 0;
+	  write fact // output factorial of x
+	end
